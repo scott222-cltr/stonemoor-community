@@ -6,8 +6,8 @@
   Original Publication: 15/10/2026
   Configure Supabase in the section below before enabling accounts and chat.
 */
-const SUPABASE_URL = "PASTE_YOUR_SUPABASE_PROJECT_URL_HERE";
-const SUPABASE_ANON_KEY = "PASTE_YOUR_SUPABASE_PUBLISHABLE_KEY_HERE";
+const SUPABASE_URL = "https://tlxxqqzxirqlldkteeav.supabase.co/rest/v1/";
+const SUPABASE_ANON_KEY = "sb_publishable_02VOqKbgX1gc5c-JQQHW1w_BhUgg6c8";
 
 const configured = SUPABASE_URL.startsWith("https://") &&
   !SUPABASE_URL.includes("PASTE_") &&
