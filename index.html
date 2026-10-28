@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101712">
+  <title>Stonemoor County | Community</title>
+  <meta name="description" content="The official Stonemoor County community hub. Announcements, events and community chat.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Stonemoor County home">
+      <div class="brand-mark">SC</div><div><strong>STONEMOOR COUNTY</strong><span>COMMUNITY HUB</span></div>
+    </a>
+    <nav class="nav"><a class="active" href="#home">Home</a><a href="#announcements">News</a><a href="#chat">Community chat</a></nav>
+    <div class="account-actions" id="accountActions"><button class="btn btn-quiet" id="loginOpen">Log in</button><button class="btn btn-primary" id="signupOpen">Join community <span>↗</span></button></div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> THE OFFICIAL COMMUNITY HUB</div>
+        <h1>More than a county.<br><span>A community.</span></h1>
+        <p>Stay in the loop, meet the community and be part of what happens next in Stonemoor County.</p>
+        <div class="hero-actions"><a class="btn btn-primary btn-large" href="#announcements">Explore the latest <span>↗</span></a><a class="btn btn-outline btn-large" href="#chat">Join the conversation</a></div>
+        <div class="hero-proof"><div class="avatar-stack"><span>S</span><span>M</span><span>C</span></div><span><strong>One community.</strong> Built around Stonemoor.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Countryside landscape illustration">
+        <div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-mid"></div><div class="hill hill-front"></div>
+        <div class="road"></div><div class="road-line"></div>
+        <div class="art-label"><span class="status-dot"></span><div><strong>STONEMOOR COUNTY</strong><small>YOUR COMMUNITY STARTS HERE</small></div></div>
+        <div class="art-coordinates">COMMUNITY • EVENTS • UPDATES</div>
+      </div>
+    </section>
+
+    <section class="quick-stats">
+      <div><span class="stat-icon">✦</span><span><strong>Official updates</strong><small>News from the team</small></span></div>
+      <div><span class="stat-icon">◎</span><span><strong>Community chat</strong><small>Talk with other members</small></span></div>
+      <div><span class="stat-icon">⌘</span><span><strong>Member profiles</strong><small>Your place in Stonemoor</small></span></div>
+      <div><span class="stat-icon">⬡</span><span><strong>Safe community</strong><small>Moderation tools built in</small></span></div>
+    </section>
+
+    <section class="section" id="announcements">
+      <div class="section-heading"><div><div class="eyebrow">WHAT'S HAPPENING</div><h2>Latest from Stonemoor</h2><p>Announcements, events and updates from the community team.</p></div><span class="section-pill">COMMUNITY NEWS</span></div>
+      <div id="announcementList" class="announcement-grid"><article class="announcement-card featured"><div class="announcement-top"><span class="tag">WELCOME</span><span class="date">START HERE</span></div><h3>Welcome to Stonemoor County</h3><p>This is your community hub for official updates, upcoming events and conversations with fellow members.</p><div class="card-foot"><span class="author-dot">SC</span><span>Stonemoor Team</span><span class="read-more">Official update ↗</span></div></article>
+      <article class="announcement-card"><div class="announcement-top"><span class="tag tag-muted">COMMUNITY</span><span class="date">YOUR SPACE</span></div><h3>Get involved</h3><p>Got an idea for the community? Join the chat and share your suggestions with other members.</p><div class="card-foot"><span class="author-dot">SC</span><span>Community Team</span><span class="read-more">Join in ↗</span></div></article>
+      <article class="announcement-card"><div class="announcement-top"><span class="tag tag-muted">UPDATES</span><span class="date">COMING SOON</span></div><h3>More updates, all in one place</h3><p>Once the site is connected, official announcements posted by staff will appear here automatically.</p><div class="card-foot"><span class="author-dot">SC</span><span>Stonemoor Team</span><span class="read-more">Stay tuned ↗</span></div></article></div>
+      <p class="section-note" id="newsStatus">Showing welcome information. Connect your Supabase project to enable live announcements.</p>
+    </section>
+
+    <section class="community-section" id="chat">
+      <div class="chat-intro"><div class="eyebrow">YOUR COMMUNITY, TOGETHER</div><h2>Good things happen<br>when we <span>connect.</span></h2><p>Say hello, share ideas and keep up with the conversation. Sign in to send messages and take part.</p><div class="chat-benefits"><span>✓ Messages saved</span><span>✓ Live updates</span><span>✓ Moderated space</span></div></div>
+      <div class="chat-panel">
+        <div class="chat-header"><div class="chat-live"><span class="status-dot"></span><div><strong>Community lounge</strong><small id="chatSubheading">A place to say hello</small></div></div><span class="online-badge">● COMMUNITY</span></div>
+        <div class="chat-messages" id="chatMessages"><div class="system-message">Welcome to the Stonemoor community lounge.</div><div class="empty-chat"><div class="empty-chat-icon">✦</div><strong>Your community conversation starts here</strong><p>Connect the website to Supabase to enable saved, live chat.</p></div></div>
+        <form class="chat-compose" id="chatForm"><input id="chatInput" maxlength="800" placeholder="Connect Supabase to enable chat…" disabled aria-label="Chat message"><button class="send-btn" id="sendButton" disabled aria-label="Send message">↑</button></form>
+        <div class="chat-foot" id="chatFoot">Messages are shared with signed-in community members.</div>
+      </div>
+    </section>
+
+    <section class="join-banner"><div class="join-emblem">SC</div><div><div class="eyebrow">YOUR COUNTY. YOUR COMMUNITY.</div><h2>There's a place for you here.</h2><p>Create an account to join the conversation and keep up with the latest.</p></div><button class="btn btn-primary btn-large" id="bannerSignup">Create your account <span>↗</span></button></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><div class="brand-mark">SC</div><div><strong>STONEMOOR COUNTY</strong><span>COMMUNITY HUB</span></div></a><span>Made for the Stonemoor County community.</span><a href="#home">Back to top ↑</a></footer>
+
+  <div class="modal-backdrop" id="authModal" hidden>
+    <section class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button><div class="brand-mark modal-mark">SC</div>
+      <div class="eyebrow">STONEMOOR COUNTY</div><h2 id="authTitle">Welcome to the community</h2><p id="authDescription">Create an account to join the conversation.</p>
+      <form id="authForm"><label for="displayName" id="nameLabel">Display name</label><input id="displayName" maxlength="32" autocomplete="nickname" placeholder="How should we call you?"><label for="email">Email address</label><input id="email" type="email" required autocomplete="email" placeholder="you@example.com"><label for="password">Password</label><input id="password" type="password" minlength="8" required autocomplete="current-password" placeholder="At least 8 characters"><button class="btn btn-primary auth-submit" id="authSubmit" type="submit">Create account <span>↗</span></button><p class="auth-feedback" id="authFeedback" role="status"></p></form>
+      <p class="switch-auth"><span id="switchText">Already have an account?</span> <button id="switchAuth" type="button">Log in</button></p>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
