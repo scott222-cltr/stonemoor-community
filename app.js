@@ -1,11 +1,3 @@
-/*
-  STONEMOOR COUNTY COMMUNITY HUB
-  Owner: M_Scott06 | Owner UserID: 2333295251
-  Second Signature: RBXJosh
-  Roblox Group / Experience: Stonemoor County
-  Original Publication: 15/10/2026
-  Configure Supabase in the section below before enabling accounts and chat.
-*/
 const SUPABASE_URL = "https://tlxxqqzxirqlldkteeav.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_02VOqKbgX1gc5c-JQQHW1w_BhUgg6c8";
 
